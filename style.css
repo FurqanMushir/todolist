@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #eef3ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main {
+    background-color: #fff;
+    min-height: 350px;
+    width: 500px;
+    border-radius: 20px;
+}
+.heading h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 15px;
+    text-align: center;
+    background-color: #afc2df;
+    font-size: 35px;
+    border: 0;
+    border-top-right-radius: 15px;
+    border-left: 15px;
+}
+
+.inputs {
+    padding: 15px;
+    display: flex;
+    gap: 5px;
+}
+.inputs #inputs {
+    padding: 10px;
+    width: 80%;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid #d5dde8;
+}
+.inputs #addTask {
+    background-color: #4285f4;
+    border: 0;
+    color: #fff;
+    width: 25%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#addTask:hover {
+    background-color: #676767;
+}
+#tasks li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 10px 15px;
+    padding: 12px 15px;
+    min-height: 48px;
+    background-color: #f5f7ff;
+    border: 1px solid #d5dde8;
+    border-radius: 10px;
+    color: #17243a;
+    font-size: 16px;
+    list-style: none;
+}
+#tasks li button{
+    border-radius: 5px;
+    background-color: #4285f4;
+    border: none;
+    color: #fff;
+    height: 30px;
+    width: 90px;
+}
