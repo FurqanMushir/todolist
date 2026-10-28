@@ -5,7 +5,8 @@
 }
 body {
     background-color: #eef3ff;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +24,7 @@ body {
     background-color: #afc2df;
     font-size: 35px;
     border: 0;
-    border-top-right-radius: 15px;
+    border-radius: 15px 15px 0 0;
     border-left: 15px;
 }
 
@@ -72,4 +73,75 @@ body {
     color: #fff;
     height: 30px;
     width: 90px;
+}
+
+
+
+
+/* Responsive Design */
+
+/* Tablets and smaller laptops */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .main {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+        align-items: flex-start;
+    }
+
+    .main {
+        width: 100%;
+        min-height: 300px;
+        border-radius: 15px;
+    }
+
+    .heading h1 {
+        font-size: 27px;
+        padding: 12px;
+    }
+
+    .inputs {
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .inputs #inputs {
+        width: 70%;
+        min-width: 0;
+        font-size: 14px;
+    }
+
+    .inputs #addTask {
+        width: 30%;
+        min-height: 35px;
+        font-size: 12px;
+    }
+
+    #tasks li {
+        margin: 10px 12px;
+        padding: 10px;
+        gap: 8px;
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    #tasks li button {
+        flex-shrink: 0;
+        width: auto;
+        min-height: 30px;
+        padding: 6px 8px;
+        font-size: 11px;
+    }
 }
